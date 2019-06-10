@@ -10,6 +10,9 @@
 
 **Запуск проекта**
 
+Через php (только версия без Redis):
+`WEB_APP_PORT=9999 php index.php`
+
 Через docker-compose:
 `docker-compose up -d`
 

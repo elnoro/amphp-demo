@@ -37,6 +37,12 @@ final class InMemoryLinkRepository implements LinkRepositoryInterface
 
     public function removeLink(string $linkToRemove): Promise
     {
+        foreach ($this->links as $key => $link) {
+            if ($linkToRemove === $link) {
+                unset($this->links[$key]);
+            }
+        }
+
         return new Success();
     }
 }

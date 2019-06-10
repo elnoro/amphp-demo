@@ -7,6 +7,7 @@ use Amp\Http\Server\Router;
 use Amp\Http\Server\Server;
 use Amp\Socket;
 use App\Links\InMemoryLinkRepository;
+use App\Links\RedisLinkRepository;
 use App\RequestHandler\LinkRenderer;
 use App\Logging\LoggerFactory;
 use App\RequestHandler\LinkController;

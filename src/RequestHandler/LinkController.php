@@ -54,6 +54,8 @@ final class LinkController
             }
         }
 
+        // wrap function attaches a callback to the promise
+        // alternatively, a combination of yield + call could be used, see LinkRenderer::view()
         return wrap(
             $this->linkViewer->view($this->linkRepository),
             function ($e, $v) {
